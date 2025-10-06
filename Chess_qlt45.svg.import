@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3tlpe7idh6uo"
-path="res://.godot/imported/Chess_nlt60.png-aa54a3768bc3310a060d3c826fc86cd1.ctex"
+uid="uid://brqdarf61l5yl"
+path="res://.godot/imported/Chess_qlt45.svg-9dce170c862d286507747320b5ff8a55.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Chess_nlt60.png"
-dest_files=["res://.godot/imported/Chess_nlt60.png-aa54a3768bc3310a060d3c826fc86cd1.ctex"]
+source_file="res://Chess_qlt45.svg"
+dest_files=["res://.godot/imported/Chess_qlt45.svg-9dce170c862d286507747320b5ff8a55.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

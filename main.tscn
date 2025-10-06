@@ -1,12 +1,155 @@
-[gd_scene load_steps=3 format=3 uid="uid://cxr6txhygjuil"]
+[gd_scene load_steps=15 format=3 uid="uid://cxr6txhygjuil"]
 
 [ext_resource type="Script" uid="uid://cm1jixnsx6tlp" path="res://Main.gd" id="1_0xm2m"]
 [ext_resource type="Texture2D" uid="uid://cadpmy13wkomx" path="res://Chess_nlt45.svg" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://d01bcdo0l70os" path="res://board.tscn" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bj15ffeslwx4j" path="res://Chess_blt45.svg" id="3_w48qg"]
+[ext_resource type="Texture2D" uid="uid://dk8pffouf1ydf" path="res://Chess_klt45.svg" id="4_vivmo"]
+[ext_resource type="Texture2D" uid="uid://bwn4qwpteerdj" path="res://Chess_plt45.svg" id="6_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://brqdarf61l5yl" path="res://Chess_qlt45.svg" id="7_yaehf"]
+[ext_resource type="Texture2D" uid="uid://dtk487fu7gxtp" path="res://Chess_rlt45.svg" id="8_074og"]
+[ext_resource type="Texture2D" uid="uid://byueq34ce8lf2" path="res://Chess_pdt45.svg" id="9_cegan"]
+[ext_resource type="Texture2D" uid="uid://6qdcg7tdjyk4" path="res://Chess_bdt45.svg" id="10_82xsv"]
+[ext_resource type="Texture2D" uid="uid://suyg4tshvdt" path="res://Chess_kdt45.svg" id="11_getpj"]
+[ext_resource type="Texture2D" uid="uid://bo87wxo2dryap" path="res://Chess_ndt45.svg" id="12_ryguw"]
+[ext_resource type="Texture2D" uid="uid://vyte0n8n7ea7" path="res://Chess_qdt45.svg" id="13_d13ii"]
+[ext_resource type="Texture2D" uid="uid://bqh6ddt71a73a" path="res://Chess_rdt45.svg" id="14_1u8w0"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_0xm2m")
 
-[node name="ChessNlt45" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(195, 156)
+[node name="Board" parent="." instance=ExtResource("3_h2yge")]
+
+[node name="Pieces" type="Node2D" parent="."]
+
+[node name="White_pieces" type="Node2D" parent="Pieces"]
+
+[node name="ChessBlt45" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(100, 298)
+texture = ExtResource("3_w48qg")
+
+[node name="ChessKlt45" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(142, 299)
+texture = ExtResource("4_vivmo")
+
+[node name="ChessNlt45" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(57, 298)
 texture = ExtResource("1_ig7tw")
+
+[node name="ChessPlt45" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(20, 257)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessQlt45" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(180, 299)
+texture = ExtResource("7_yaehf")
+
+[node name="ChessRlt45" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(24, 296)
+texture = ExtResource("8_074og")
+
+[node name="ChessPlt46" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(61, 255)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessPlt47" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(101, 254)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessPlt48" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(140, 255)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessPlt49" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(178, 258)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessPlt50" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(219, 256)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessPlt51" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(260, 256)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessPlt52" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(302, 252)
+texture = ExtResource("6_2cqfq")
+
+[node name="ChessNlt46" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(262, 297)
+texture = ExtResource("1_ig7tw")
+
+[node name="ChessBlt46" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(221, 300)
+texture = ExtResource("3_w48qg")
+
+[node name="ChessRlt46" type="Sprite2D" parent="Pieces/White_pieces"]
+position = Vector2(301, 299)
+texture = ExtResource("8_074og")
+
+[node name="Black_pieces" type="Node2D" parent="Pieces"]
+
+[node name="ChessPdt45" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(20, 54)
+texture = ExtResource("9_cegan")
+
+[node name="ChessBdt45" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(100, 19)
+texture = ExtResource("10_82xsv")
+
+[node name="ChessKdt45" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(139, 20)
+texture = ExtResource("11_getpj")
+
+[node name="ChessNdt45" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(60, 16)
+texture = ExtResource("12_ryguw")
+
+[node name="ChessQdt45" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(178, 22)
+texture = ExtResource("13_d13ii")
+
+[node name="ChessRdt45" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(19, 20)
+texture = ExtResource("14_1u8w0")
+
+[node name="ChessBdt46" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(220, 20)
+texture = ExtResource("10_82xsv")
+
+[node name="ChessNdt46" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(262, 19)
+texture = ExtResource("12_ryguw")
+
+[node name="ChessPdt46" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(62, 57)
+texture = ExtResource("9_cegan")
+
+[node name="ChessPdt47" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(182, 58)
+texture = ExtResource("9_cegan")
+
+[node name="ChessPdt48" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(100, 59)
+texture = ExtResource("9_cegan")
+
+[node name="ChessPdt49" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(221, 56)
+texture = ExtResource("9_cegan")
+
+[node name="ChessPdt50" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(259, 57)
+texture = ExtResource("9_cegan")
+
+[node name="ChessPdt51" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(139, 57)
+texture = ExtResource("9_cegan")
+
+[node name="ChessPdt52" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(300, 62)
+texture = ExtResource("9_cegan")
+
+[node name="ChessRdt46" type="Sprite2D" parent="Pieces/Black_pieces"]
+position = Vector2(299, 18)
+texture = ExtResource("14_1u8w0")
